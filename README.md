@@ -1,6 +1,7 @@
 # Room Checker Bot (a Botkit project for Webex Teams)
 
 This project implements a Botkit + Webex Teams adapter bot.
+
 This bot checks the availability of a room and allows you to reserve it.
 
 **Advanced users: check the ["CiscoDevNet Botkit template"](https://github.com/CiscoDevNet/botkit-template) repo branches for a more polished template, as well as the [Redis](https://github.com/CiscoDevNet/botkit-template/tree/redis), [Pluggable](https://github.com/CiscoDevNet/botkit-template/tree/plugin) branches.**
