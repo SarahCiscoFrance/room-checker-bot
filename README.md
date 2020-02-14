@@ -1,6 +1,6 @@
-# Template to bootstrap a Botkit project for Webex Teams
+# Room Checker Bot (a Botkit project for Webex Teams)
 
-This template project implements a Botkit + Webex Teams adapter bot, providing a few extra good practice features:
+This project implements a Botkit + Webex Teams adapter bot, providing a few extra good practice features:
 
 - A 'health check' URL: check bot availability and metadata by browsing to a `/ping` endpoint
 
@@ -16,13 +16,12 @@ you can run this template in a jiffy:
 1. Clone this repo:
 
     ```sh
-    git clone https://github.com/CiscoDevNet/botkit-webex-samples.git
+    git clone https://github.com/SarahCiscoFrance/room-checker-bot.git
     ```
 
 1. Change into the new repo's `template/` directory and install the Node.js dependencies:
 
     ```sh
-    cd botkit-webex-samples
     cd template
     npm install
     ```
