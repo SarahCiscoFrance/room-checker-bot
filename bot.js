@@ -1,9 +1,9 @@
-const DataStore = require("nedb");
+//const DataStore = require("nedb");
 // database used for logs
-const database = new DataStore("logs.db");
+//const database = new DataStore("logs.db");
+//database.loadDatabase();
 const mongoose = require("mongoose");
 
-database.loadDatabase();
 mongoose.connect("mongodb://localhost:27017/room-checker", {
   useNewUrlParser: true
 });
@@ -38,6 +38,22 @@ const controller = new Botkit({
   webhook_uri: "/api/messages",
   adapter,
   storage: null
+});
+
+// Use of bot limited to Webex bot and Cisco/CiscoFrance member
+controller.middleware.receive.use(function(bot, message, next) {
+  if (message.personEmail) {
+    let domain = message.personEmail.split("@");
+    if (
+      domain[1] == "cisco.com" ||
+      domain[1] == "ciscofrance.com" ||
+      domain[1] == "webex.bot"
+    ) {
+      next();
+    }
+  } else {
+    next();
+  }
 });
 
 // Once the bot has booted up its internal services, you can use them to do stuff.
