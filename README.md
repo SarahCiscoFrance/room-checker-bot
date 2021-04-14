@@ -20,16 +20,13 @@ To add a device to the bot just install the macro on this device
 
 ## How to run 🔨
 
-Assuming you plan to expose your bot via [ngrok](https://ngrok.com),
-you can run this template in a jiffy:
-
 1. Clone this repo:
 
     ```sh
     git clone https://github.com/SarahCiscoFrance/room-checker-bot.git
     ```
 
-1. Change into the new repo's `template/` directory and install the Node.js dependencies:
+1. Change into the new repo's directory and install the Node.js dependencies:
 
     ```sh
     npm install
@@ -37,7 +34,7 @@ you can run this template in a jiffy:
 
 1. Create a Webex Teams bot account at ['Webex for Developers'](https://developer.webex.com/add-bot.html), and note/save your bot's access token
 
-1. Launch ngrok to expose port 3000 of your local machine to the internet:
+1.  Assuming you plan to expose your bot via [ngrok](https://ngrok.com) launch ngrok to expose port 3000 of your local machine to the internet if not you can skip this step:
 
     ```sh
     ngrok http 3000
