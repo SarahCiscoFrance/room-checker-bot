@@ -3,6 +3,7 @@
 
 ## What is it ?
 This bot checks the availability of a room and allows you to reserve it.
+![Image description](https://raw.githubusercontent.com/SarahCiscoFrance/room-checker-bot/master/Room-Checker-Visual.png)
 
 **How ?**
 
