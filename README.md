@@ -4,16 +4,16 @@
 ## What is it ?
 This bot checks the availability of a room and allows you to reserve it.
 
-How ?
+**How ?**
 
 All Webex Room, Board and Desk series devices come with intelligent people counting sensors directly embedded without any additional cost.
-Webex device send 2 type of data to the Room-Checker-Bot:
-- Presence : detect a presence 
+This Webex device send 2 type of data to the Room-Checker-Bot:
+- Presence : detect the presence of a person thanks 
 - PeopleCount : the number of people detected in the room
 
 
 
-## How to run
+## How to run 🔨
 
 Assuming you plan to expose your bot via [ngrok](https://ngrok.com),
 you can run this template in a jiffy:
