@@ -1,10 +1,17 @@
-# Room Checker Bot (a Botkit project for Webex Teams)
+# Room-Checker-Bot 🤖 
+(This project implements a Botkit + Webex Teams adapter bot).
 
-This project implements a Botkit + Webex Teams adapter bot.
-
+## What is it ?
 This bot checks the availability of a room and allows you to reserve it.
 
-**Advanced users: check the ["CiscoDevNet Botkit template"](https://github.com/CiscoDevNet/botkit-template) repo branches for a more polished template, as well as the [Redis](https://github.com/CiscoDevNet/botkit-template/tree/redis), [Pluggable](https://github.com/CiscoDevNet/botkit-template/tree/plugin) branches.**
+How ?
+
+All Webex Room, Board and Desk series devices come with intelligent people counting sensors directly embedded without any additional cost.
+Webex device send 2 type of data to the Room-Checker-Bot:
+- Presence : detect a presence 
+- PeopleCount : the number of people detected in the room
+
+
 
 ## How to run
 
@@ -20,7 +27,6 @@ you can run this template in a jiffy:
 1. Change into the new repo's `template/` directory and install the Node.js dependencies:
 
     ```sh
-    cd template
     npm install
     ```
 
@@ -41,6 +47,18 @@ you can run this template in a jiffy:
     To successfully run, you'll need to specify at minimum a PUBLIC_ADDRESS (ngrok HTTPS forwarding URL), and a ACCESS_TOKEN (Webex Teams bot access token.)
 
     Additional values in the `.env` file (like 'OWNER' and 'CODE') are used to populate the `/ping` URL metadata
+    
+1. Install mongodb and create a collection of objects that you will call "codecs" (see example below).
+    ```sh
+    {
+        "_id" : ObjectId("5e2809bbbb4e47d8339b0aed"),
+        "mac" : "6C:6C:D3:2B:F3:70",
+        "name" : "Kandinsky Dual 70",
+        "status" : false,"nbPeople" : 5,
+        "ip" : "10.1.110.182",
+        "publicIp" : "::ffff:10.1.110.182"
+    }
+    ```
 
 1. You're ready to run your bot:
 
