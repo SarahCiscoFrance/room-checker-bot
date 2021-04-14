@@ -34,8 +34,8 @@ To add a device to the bot just install the macro on this device
 
 1. Create a Webex Teams bot account at ['Webex for Developers'](https://developer.webex.com/add-bot.html), and note/save your bot's access token
 
-1.  Assuming you plan to expose your bot via [ngrok](https://ngrok.com) launch ngrok to expose port 3000 of your local machine to the internet if not you can skip this step:
-
+1.  ⚠️ Assuming you plan to expose your bot via [ngrok](https://ngrok.com) to test the bot and to expose port 3000 of your local machine to the internet **if not you can skip this step**.
+Launch ngrok:
     ```sh
     ngrok http 3000
     ```
