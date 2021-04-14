@@ -8,11 +8,15 @@ This bot checks the availability of a room and allows you to reserve it.
 **How ?**
 
 All Webex Room, Board and Desk series devices come with intelligent people counting sensors directly embedded without any additional cost.
-Here they send 2 type of data to the Room-Checker-Bot through a macro :
-- Presence : detect the presence of a person thanks 
-- PeopleCount : the number of people detected in the room
+So a Webex device in a room can tell us if this room is currently used or not.
 
+In our case the devices send 2 type of data to the Room-Checker-Bot through a macro :
+- **Presence** : the presence of a person in the room
+- **PeopleCount** : the number of people detected in the room
 
+This data are send by the following marco : https://github.com/SarahCiscoFrance/room-checker-bot/blob/master/room-checker-macro.js
+
+To add a device to the bot just install the macro on this device
 
 ## How to run 🔨
 
@@ -60,6 +64,10 @@ you can run this template in a jiffy:
         "publicIp" : "::ffff:10.1.110.182"
     }
     ```
+    
+1. Install the macro on your Webex device [link to the macro](https://github.com/SarahCiscoFrance/room-checker-bot/blob/master/room-checker-macro.js)
+
+This will allow the bot to receive presence data and have the device in its list 
 
 1. You're ready to run your bot:
 
