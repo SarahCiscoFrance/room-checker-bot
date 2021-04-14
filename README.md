@@ -65,7 +65,7 @@ Launch ngrok:
     
 1. Install the macro on your Webex device [link to the macro](https://github.com/SarahCiscoFrance/room-checker-bot/blob/master/room-checker-macro.js)
 
-This will allow the bot to receive presence data and have the device in its list 
+    >This will allow the bot to receive presence data and have the device in its list 
 
 1. You're ready to run your bot:
 
